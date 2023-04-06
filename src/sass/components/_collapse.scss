@@ -1,0 +1,60 @@
+.collapse[aria-expanded="true"] {
+    .collapse__content {
+        height: 100%;
+    }
+
+    .collapse__button {
+        height: 100%;
+
+        &__arrow {
+            transform: rotate(180deg);
+        }
+    }
+}
+
+.collapse {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    //justify-content: space-between;
+
+    &__button {
+        padding: 0.5rem 2rem 0.5rem 1rem; // 8px vertical et 16 horizsontal
+        background-color: $primary-color;
+        width: 100%;
+        height: 3rem; // mobile 30px normalement 47px
+        border: none;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: $white;
+        font-size: 24px;
+
+        p {}
+
+
+        &__arrow {
+            cursor: pointer;
+            //transform: rotate(90deg);
+            transition: transform 300ms ease-in-out;
+        }
+
+        //j'ai tenté
+        // &__arrow[isCollapsed="1"] {
+        //     transform: rotate(180deg);
+        // }
+
+        // .arrow--active {
+        //     transform: rotate(180deg);
+        // }
+
+    }
+
+    &__content {
+        overflow: hidden;
+        height: 0;
+    }
+}

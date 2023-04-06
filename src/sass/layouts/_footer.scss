@@ -1,0 +1,25 @@
+.footer {
+    position: absolute;
+    left: 0;
+    //bottom: 0;
+    width: 100%;
+    background-color: $black;
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__logo {
+        filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(176deg) brightness(203%) contrast(101%); //sur fond noir couleur blanc
+    }
+
+    &__logo:hover {
+        filter: initial //sur fond noir couleur blanc
+    }
+
+    &__copyright {
+        color: white;
+        font-size: 1.5rem; //24px = 1.5rem
+    }
+}

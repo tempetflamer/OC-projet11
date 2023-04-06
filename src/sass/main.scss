@@ -1,0 +1,5 @@
+@import "./utils/variables";
+@import "./bases/reset", "./bases/typography", "./bases/set";
+@import "./layouts/header", "./layouts/footer";
+@import "./pages/error404";
+@import "./components/banner", "./components/cardHouse", "./components/collapse";
