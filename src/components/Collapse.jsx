@@ -1,21 +1,9 @@
 import React from 'react'
-import { useState, useEffect, useRef } from 'react'
+import { useState } from 'react'
 import imgChevron from '../assets/img/chevron.svg'
 
 const Collapse = ({ title, content }) => {
   const [isCollapsed, setIsCollapsed] = useState(false)
-  //const [classNameChevron, setClassNameChevron] = useState('collapse__button__arrow')
-
-  /*   useEffect(() => {
-    renderAnimations()
-  }, [isCollapsed]) */
-
-  //let classNameChevron = 'collapse__button__arrow'
-
-  /*   const renderAnimations = () => {
-    //return isCollapsed ? (classNameChevron += 'arrow--active') : (classNameChevron -= 'arrow--active')
-    setClassNameChevron((state) => (isCollapsed ? (state += 'arrow--active') : (state -= 'arrow--active')))
-  } */
 
   return (
     <div className="collapse" aria-expanded={isCollapsed}>

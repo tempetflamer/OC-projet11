@@ -1,7 +1,8 @@
 node_modules/
 coverage/
 .eslintrc.js
-package-lock.json# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+package-lock.json
+command.md
 
 # dependencies
 /node_modules
