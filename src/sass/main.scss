@@ -1,5 +1,6 @@
-@import "./utils/variables";
+@import "./utils/variables", "./utils/mixins";
 @import "./bases/reset", "./bases/typography", "./bases/set";
 @import "./layouts/header", "./layouts/footer";
-@import "./pages/error404";
-@import "./components/banner", "./components/cardHouse", "./components/collapse";
+@import "./pages/error404", "./pages/about", "./pages/Accommodation";
+@import "./components/banner", "./components/cardAcc", "./components/collapse", "./components/gallery",
+    "./components/host", "./components/rating", "./components/tag";

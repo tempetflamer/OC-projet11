@@ -1,9 +1,8 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
 
 import Collapse from '../components/Collapse'
 import Banner from '../components/Banner'
-import imgBanner from "../assets/img/Background_about.jpg"
+import imgBanner from '../assets/img/Background_about.jpg'
 
 function About() {
   const aboutContent = [
@@ -34,9 +33,11 @@ function About() {
       <div className="about__banner">
         <Banner image={imgBanner} title="" />
       </div>{' '}
-      {aboutContent.map((col, i) => (
-        <Collapse key={i} title={col.title} content={col.content} />
-      ))}
+      <section className="about__infos">
+        {aboutContent.map((col, i) => (
+          <Collapse key={i} title={col.title} content={col.content} />
+        ))}
+      </section>
     </div>
   )
 }

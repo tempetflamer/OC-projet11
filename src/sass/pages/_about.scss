@@ -1,0 +1,15 @@
+.about {
+    &__infos {
+        margin-bottom: 2.6rem;
+    }
+
+    &__banner {
+        margin-bottom: 1.875rem;
+        .banner {
+            @include media-query(small) {
+                height: 14rem;
+                margin-bottom: 1.5rem;
+            }
+        }
+    }
+}

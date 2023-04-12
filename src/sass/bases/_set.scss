@@ -1,15 +1,44 @@
-#root {
+html {
+    min-height: 100vh;
+}
+
+//créer un wrap à la place de root ici // je peux aussi le placer sur chaque élément directement
+.content-wrap {
     margin: 0 6.25rem 0 6.25rem;
-    min-height: 95vh;
+    @include media-query(small) {
+        margin: 0 1.25rem 0 1.25rem;
+    }
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     font-weight: 500;
+    min-height: 95vh;
 }
 
-// p {
-//     font-weight: 400;
-// }
+/* #root {
+    display: flex;
+    flex-direction: column;
+}
+
+.fillSpace {
+    flex: 1;
+}
+ */
+
+/* second method avec flex */
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+p,
+h1,
+h2,
+a,
+button p {
+    line-height: 142.6%;
+}

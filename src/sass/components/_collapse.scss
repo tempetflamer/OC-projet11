@@ -4,8 +4,6 @@
     }
 
     .collapse__button {
-        height: 100%;
-
         &__arrow {
             transform: rotate(180deg);
         }
@@ -18,7 +16,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    //justify-content: space-between;
 
     &__button {
         padding: 0.5rem 2rem 0.5rem 1rem; // 8px vertical et 16 horizsontal
@@ -32,29 +29,57 @@
         align-items: center;
         color: $white;
         font-size: 24px;
+        cursor: pointer;
 
-        p {}
-
-
-        &__arrow {
-            cursor: pointer;
-            //transform: rotate(90deg);
-            transition: transform 300ms ease-in-out;
+        p {
+            @include media-query(small) {
+                font-size: 13px;
+            }
         }
 
-        //j'ai tenté
-        // &__arrow[isCollapsed="1"] {
-        //     transform: rotate(180deg);
-        // }
+        &__arrow {
+            transition: transform 300ms ease-in-out;
+            @include media-query(small) {
+                width: 1rem;
+            }
+        }
+    }
 
-        // .arrow--active {
-        //     transform: rotate(180deg);
-        // }
-
+    &__button:hover {
+        background-color: #dc2626;
     }
 
     &__content {
         overflow: hidden;
+        background: $light-grey;
+        color: $primary-color;
+        font-weight: 400;
+        font-size: 1.125rem; //18px
         height: 0;
+        border-radius: 10px;
+        width: 100%;
+
+        p {
+            margin: 2rem 1.2rem 1.2rem 1.2rem;
+            @include media-query(small) {
+                font-size: 0.75rem;
+                margin-top: 1.1rem;
+                margin-bottom: 2rem;
+            }
+        }
+
+        &__list {
+            width: inherit;
+            margin: 2rem 1.2rem 1.2rem 1.2rem;
+            padding: 0;
+            @include media-query(small) {
+                font-size: 0.75rem;
+                margin-top: 1.1rem;
+            }
+
+            &__list-equipment {
+                margin: 0;
+            }
+        }
     }
 }

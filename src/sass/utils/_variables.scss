@@ -2,3 +2,11 @@ $primary-color: #ff6060;
 $light-grey: #f7f7f7;
 $white: #fff;
 $black: #000;
+
+$breakpoints: (
+    xsmall: 380px,
+    small: 768px,
+    medium: 992px,
+    large: 1200px,
+    xlarge: 1600px,
+);

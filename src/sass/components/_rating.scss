@@ -1,0 +1,10 @@
+.rating {
+    display: flex;
+    align-items: center;
+
+    img {
+        @include media-query(small) {
+            height: 13px;
+        }
+    }
+}
