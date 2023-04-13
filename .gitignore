@@ -3,7 +3,6 @@ coverage/
 .eslintrc.js
 package-lock.json
 command.md
-/prefixer
 
 # dependencies
 /node_modules
