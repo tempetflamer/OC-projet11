@@ -108,8 +108,10 @@ and scripts into the app directory. If you do this, you can’t go back!
 I also use Sass in this project .
 
 ## Structure du projet 
+- `build/`, Il contient l'application compilé prêt à être mis en "production"
 - `public/`, contient tous les fichiers qui n'ont pas besoin d'être compilés
 - `src/`, contient tous les fichier de développement de l'application qui seront compilés
+    - `assets/`, contient toutes les images et le fichier Json utilisé par l'application (passant par la compilation)
 - `.gitignore`, fichier qui permet de définir les fichiers à ignorer dans la liste des fichiers modifiés à "push"
 - `.prettierrc`, fichier permettant la configuration de prettier (code formatter)
 - `package.json` & `package-lock.json`, fichiers utilisés par npm pour gérer les dépendances
@@ -159,7 +161,11 @@ I also use Sass in this project .
 
 ## Lien de  la démo du site
 
-[Démo site Kasa](https://www.figma.com/file/bAnXDNqRKCRRP8mY2gcb5p/UI-Design?node-id=4%3A1)
+[Démo site Kasa](https://tempetflamer.github.io/OC-projet11/)
+
+Par défaut le site renverra sur la page erreur 404, c'est normal le site n'est pas prévu pour être mis sur github (dossier d'un sous-domaine) et cherchera OC-projet11 comme un dossier ou page du site.
+
+Il est possible de corriger cette erreur en ajoutant OC-projet11 comme page de redirection vers le menu (le site étant sur la branch gh-pages), mais cela n'a pas d'intéret sur un site de démo et ne ferait que modifier (détourner de) son fonctionnement initial.
 
 
 ## Compétences évaluées
