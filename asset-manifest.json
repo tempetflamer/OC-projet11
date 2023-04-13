@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/OC-projet11/static/css/main.b6d99532.css",
+    "main.js": "/OC-projet11/static/js/main.6e0387bd.js",
+    "static/media/Background_about.jpg": "/OC-projet11/static/media/Background_about.2311d425af94f141670d.jpg",
+    "static/media/banner_home.jpg": "/OC-projet11/static/media/banner_home.b9f99625124b99a4837d.jpg",
+    "static/media/name.svg": "/OC-projet11/static/media/name.4bd79f8a9a365f2c54a4637de36571a4.svg",
+    "index.html": "/OC-projet11/index.html",
+    "static/media/grey-star.svg": "/OC-projet11/static/media/grey-star.68fd8a1ead5375bd59bb6ae0b633ffd3.svg",
+    "static/media/red-star.svg": "/OC-projet11/static/media/red-star.30b8963e66a47777ef47296f505567be.svg",
+    "static/media/chevron.svg": "/OC-projet11/static/media/chevron.2315f85335b3b6805ba7666d56cbc6aa.svg",
+    "main.b6d99532.css.map": "/OC-projet11/static/css/main.b6d99532.css.map",
+    "main.6e0387bd.js.map": "/OC-projet11/static/js/main.6e0387bd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b6d99532.css",
+    "static/js/main.6e0387bd.js"
+  ]
+}
