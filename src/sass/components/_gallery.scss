@@ -63,13 +63,17 @@
                     width: 0.75rem;
                 }
             }
+            img:hover {
+                filter: invert(70%) sepia(0%) saturate(4%) hue-rotate(171deg) brightness(100%) contrast(82%);
+                transform: scale(1.1) rotate(90deg);
+            }
         }
 
         &__next {
             img {
                 transform: rotate(270deg);
-                height: 5rem; //80px = 5rem
-                width: 3rem; // 48px = 3rem
+                height: 5rem;
+                width: 3rem;
                 @include media-query(large) {
                     height: 3.75rem;
                     width: 2.25rem;
@@ -82,6 +86,10 @@
                     height: 1.25rem;
                     width: 0.75rem;
                 }
+            }
+            img:hover {
+                filter: invert(70%) sepia(0%) saturate(4%) hue-rotate(171deg) brightness(100%) contrast(82%);
+                transform: scale(1.1) rotate(270deg);
             }
         }
 

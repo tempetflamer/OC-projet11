@@ -2,16 +2,23 @@
     &__list {
         background-color: $light-grey;
         padding: 3.5rem 3.125rem 3.5rem 3.125rem;
-        //margin: 3.5rem 3.125rem 0 3.125rem; //50px = 3.125rem , 56px = 3.5rem, 60px = 3.75rem
         margin-bottom: 4rem;
         gap: 3.5rem 3.75rem;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        @include media-query(medium) {
+            gap: 2rem 2.75rem;
+        }
         @include media-query(small) {
             background-color: $white;
             padding-top: 0;
             padding-bottom: 0;
+            gap: 1rem 2.75rem;
+        }
+        @include media-query(xsmall) {
+            padding: 0;
+            gap: 0.5rem;
         }
 
         .card {
@@ -26,6 +33,10 @@
             @include media-query(small) {
                 width: 335px;
                 height: 255px;
+            }
+            @include media-query(2xsmall) {
+                width: 250px;
+                height: 200px;
             }
 
             &__img {
@@ -44,6 +55,13 @@
                 margin: 20px;
                 color: $white;
                 box-sizing: inherit;
+                @include media-query(small) {
+                    margin-bottom: 15px;
+                }
+                @include media-query(2xsmall) {
+                    font-size: 12px;
+                    margin-bottom: 10px;
+                }
             }
 
             &__filter {

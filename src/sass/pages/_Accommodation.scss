@@ -1,9 +1,12 @@
 .accommodation {
     margin-bottom: 6%;
     color: $primary-color;
+    @include media-query(xsmall) {
+        margin-bottom: 3.5rem;
+    }
 
     &__content {
-        margin-top: 1.875rem; //before 20px, 30px = 1.875rem
+        margin-top: 1.875rem;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -18,7 +21,7 @@
         &__informations {
             &__title {
                 margin: 0;
-                font-size: 2.25rem; //36px
+                font-size: 2.25rem;
                 font-weight: 500;
                 @include media-query(small) {
                     font-size: 1.125rem;
@@ -26,7 +29,7 @@
             }
 
             &__location {
-                font-size: 1.125rem; //18px
+                font-size: 1.125rem;
                 font-weight: 500;
                 @include media-query(small) {
                     margin-top: 5px;
@@ -46,7 +49,7 @@
             margin-bottom: -20px;
             display: flex;
             flex-direction: column;
-            gap: 1.25rem; //20px
+            gap: 1.25rem;
             align-items: flex-end;
             @include media-query(small) {
                 flex-direction: row-reverse;

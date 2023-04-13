@@ -1,6 +1,6 @@
 .tag {
     background: $primary-color;
-    border-radius: 10px; //0.625rem
+    border-radius: 10px;
     height: 25px;
     color: $white;
     padding: 0 15px;
@@ -11,7 +11,7 @@
     justify-content: center;
 
     &__text {
-        font-size: 0.875rem; //14px
+        font-size: 0.875rem;
         font-weight: 500;
         @include media-query(medium) {
             font-size: 0.75rem;

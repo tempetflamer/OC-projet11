@@ -16,11 +16,14 @@
             height: 47px;
         }
     }
+    &__logo:hover {
+        filter: brightness(85%) contrast(160%) grayscale(16%);
+    }
 
     &__menu {
         display: flex;
         align-items: center;
-        gap: 3.25rem; //3.25rem = 52px
+        gap: 3.25rem;
         color: $primary-color;
         @include media-query(small) {
             gap: 0.625rem;
@@ -28,7 +31,7 @@
 
         a {
             color: $primary-color;
-            font-size: 1.5rem; //24px = 1.5rem
+            font-size: 1.5rem;
             @include media-query(large) {
                 font-size: 1.25rem;
             }
@@ -38,6 +41,10 @@
             @include media-query(small) {
                 font-size: 0.75rem;
             }
+        }
+
+        a:hover {
+            color: $dark-red;
         }
 
         a.active {

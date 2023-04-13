@@ -24,21 +24,37 @@ h1 {
   margin: 0;
 }
 
-.content-wrap {
+header,
+.home,
+.about,
+.accommodation,
+.error {
   margin: 0 6.25rem 0 6.25rem;
 }
 @media screen and (max-width: 1200px) {
-  .content-wrap {
+  header,
+  .home,
+  .about,
+  .accommodation,
+  .error {
     margin: 0 4.5rem 0 4.5rem;
   }
 }
 @media screen and (max-width: 992px) {
-  .content-wrap {
+  header,
+  .home,
+  .about,
+  .accommodation,
+  .error {
     margin: 0 2.75rem 0 2.75rem;
   }
 }
 @media screen and (max-width: 768px) {
-  .content-wrap {
+  header,
+  .home,
+  .about,
+  .accommodation,
+  .error {
     margin: 0 1.25rem 0 1.25rem;
   }
 }
@@ -50,16 +66,6 @@ body {
   font-weight: 500;
 }
 
-/* #root {
-    display: flex;
-    flex-direction: column;
-}
-
-.fillSpace {
-    flex: 1;
-}
- */
-/* second method avec flex */
 #root {
   display: flex;
   flex-direction: column;
@@ -96,6 +102,9 @@ button p {
     height: 47px;
   }
 }
+.header__logo:hover {
+  filter: brightness(85%) contrast(160%) grayscale(16%);
+}
 .header__menu {
   display: flex;
   align-items: center;
@@ -126,13 +135,15 @@ button p {
     font-size: 0.75rem;
   }
 }
+.header__menu a:hover {
+  color: #dc2626;
+}
 .header__menu a.active {
   text-decoration: underline;
 }
 
 .footer {
   margin-top: auto;
-  left: 0;
   width: 100%;
   background-color: #000;
   padding-top: 4rem;
@@ -177,7 +188,7 @@ button p {
 
 .error {
   color: #ff6060;
-  margin-top: 10rem;
+  margin-top: 0;
   margin-bottom: 10rem;
   min-height: 100%;
   display: flex;
@@ -185,9 +196,30 @@ button p {
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 1200px) {
+  .error {
+    margin-top: 10rem;
+  }
+}
+@media screen and (max-width: 992px) {
+  .error {
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .error {
+    margin-top: 3rem;
+    margin-bottom: 6rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .error {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+  }
+}
 .error__content {
   text-align: center;
-  align-items: center;
 }
 .error__content__number {
   font-size: 18rem;
@@ -226,7 +258,13 @@ button p {
 }
 @media screen and (max-width: 768px) {
   .error__content__text {
+    margin-top: 1rem;
     font-size: 1.125rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .error__content__text {
+    margin-top: 0.5rem;
   }
 }
 .error__link {
@@ -242,8 +280,17 @@ button p {
 }
 @media screen and (max-width: 768px) {
   .error__link {
+    margin-top: 5rem;
     font-size: 0.875rem;
   }
+}
+@media screen and (max-width: 375px) {
+  .error__link {
+    margin-top: 3rem;
+  }
+}
+.error__link:hover {
+  color: #dc2626;
 }
 
 .about__infos {
@@ -262,6 +309,11 @@ button p {
 .accommodation {
   margin-bottom: 6%;
   color: #ff6060;
+}
+@media screen and (max-width: 450px) {
+  .accommodation {
+    margin-bottom: 3.5rem;
+  }
 }
 .accommodation__content {
   margin-top: 1.875rem;
@@ -422,11 +474,23 @@ button p {
   flex-wrap: wrap;
   justify-content: center;
 }
+@media screen and (max-width: 992px) {
+  .home__accs__list {
+    gap: 2rem 2.75rem;
+  }
+}
 @media screen and (max-width: 768px) {
   .home__accs__list {
     background-color: #fff;
     padding-top: 0;
     padding-bottom: 0;
+    gap: 1rem 2.75rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .home__accs__list {
+    padding: 0;
+    gap: 0.5rem;
   }
 }
 .home__accs__list .card {
@@ -445,6 +509,12 @@ button p {
     height: 255px;
   }
 }
+@media screen and (max-width: 375px) {
+  .home__accs__list .card {
+    width: 250px;
+    height: 200px;
+  }
+}
 .home__accs__list .card__img {
   width: inherit;
   height: inherit;
@@ -460,6 +530,17 @@ button p {
   margin: 20px;
   color: #fff;
   box-sizing: inherit;
+}
+@media screen and (max-width: 768px) {
+  .home__accs__list .card__title {
+    margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .home__accs__list .card__title {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
 }
 .home__accs__list .card__filter {
   position: absolute;
@@ -672,6 +753,10 @@ button p {
     width: 0.75rem;
   }
 }
+.slider__control__previous img:hover {
+  filter: invert(70%) sepia(0%) saturate(4%) hue-rotate(171deg) brightness(100%) contrast(82%);
+  transform: scale(1.1) rotate(90deg);
+}
 .slider__control__next img {
   transform: rotate(270deg);
   height: 5rem;
@@ -694,6 +779,10 @@ button p {
     height: 1.25rem;
     width: 0.75rem;
   }
+}
+.slider__control__next img:hover {
+  filter: invert(70%) sepia(0%) saturate(4%) hue-rotate(171deg) brightness(100%) contrast(82%);
+  transform: scale(1.1) rotate(270deg);
 }
 .slider__control__preview {
   color: #fff;

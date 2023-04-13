@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 
 const Header = ({ image, alt }) => {
   return (
-    <div className="header">
+    <header className="header">
       <NavLink to="/">
         <img src={image} alt={alt} className="header__logo" />
       </NavLink>
@@ -15,7 +15,7 @@ const Header = ({ image, alt }) => {
           À Propos
         </NavLink>
       </nav>
-    </div>
+    </header>
   )
 }
 

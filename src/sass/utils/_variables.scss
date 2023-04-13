@@ -2,8 +2,10 @@ $primary-color: #ff6060;
 $light-grey: #f7f7f7;
 $white: #fff;
 $black: #000;
+$dark-red: #dc2626;
 
 $breakpoints: (
+    2xsmall: 375px,
     xsmall: 450px,
     small: 768px,
     medium: 992px,

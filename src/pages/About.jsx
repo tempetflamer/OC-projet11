@@ -29,7 +29,7 @@ function About() {
   ]
 
   return (
-    <div>
+    <div className="about">
       <div className="about__banner">
         <Banner image={imgBanner} title="" />
       </div>{' '}

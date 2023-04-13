@@ -18,10 +18,10 @@
     align-items: center;
 
     &__button {
-        padding: 0.5rem 2rem 0.5rem 1rem; // 8px vertical et 16 horizsontal
+        padding: 0.5rem 2rem 0.5rem 1rem;
         background-color: $primary-color;
         width: 100%;
-        height: 3rem; // mobile 30px normalement 47px
+        height: 3rem;
         border: none;
         border-radius: 5px;
         display: flex;
@@ -55,7 +55,7 @@
     }
 
     &__button:hover {
-        background-color: #dc2626;
+        background-color: $dark-red;
     }
 
     &__content {
@@ -63,7 +63,7 @@
         background: $light-grey;
         color: $primary-color;
         font-weight: 400;
-        font-size: 1.125rem; //18px
+        font-size: 1.125rem;
         height: 0;
         border-radius: 10px;
         width: 100%;

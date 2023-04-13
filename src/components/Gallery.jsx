@@ -27,7 +27,7 @@ function Gallery({ slides }) {
             />
           ))}
         </div>
-        {/* get control (button) if there are more than one picture */}
+        {/* get control when more than one picture */}
         <div className="slider__control">
           {length > 1 ? (
             <>

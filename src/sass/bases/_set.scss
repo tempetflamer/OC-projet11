@@ -1,9 +1,8 @@
-html {
-    //min-height: 100vh;
-}
-
-//créer un wrap à la place de root ici // je peux aussi le placer sur chaque élément directement
-.content-wrap {
+header,
+.home,
+.about,
+.accommodation,
+.error {
     margin: 0 6.25rem 0 6.25rem;
     @include media-query(large) {
         margin: 0 4.5rem 0 4.5rem;
@@ -21,20 +20,8 @@ body {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     font-weight: 500;
-    //min-height: 95vh;
 }
 
-/* #root {
-    display: flex;
-    flex-direction: column;
-}
-
-.fillSpace {
-    flex: 1;
-}
- */
-
-/* second method avec flex */
 #root {
     display: flex;
     flex-direction: column;

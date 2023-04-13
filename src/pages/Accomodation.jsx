@@ -14,7 +14,7 @@ function Accomodation() {
   return (
     <>
       {house === undefined ? (
-        <Navigate to="/error-id" replace={true} />
+        <Navigate to="not-found" replace={true} />
       ) : (
         <div className="accommodation">
           <Gallery slides={house.pictures} />

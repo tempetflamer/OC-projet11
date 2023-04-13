@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import Banner from '../components/Banner'
 import CardAcc from '../components/CardAcc'
 import DataAccs from '../assets/data/logements.json'
-import imgBanner from '../assets/img/banner_home_desktop.png'
+import imgBanner from '../assets/img/banner_home.jpg'
 
 const Home = () => {
   return (
