@@ -1,10 +1,16 @@
 html {
-    min-height: 100vh;
+    //min-height: 100vh;
 }
 
 //créer un wrap à la place de root ici // je peux aussi le placer sur chaque élément directement
 .content-wrap {
     margin: 0 6.25rem 0 6.25rem;
+    @include media-query(large) {
+        margin: 0 4.5rem 0 4.5rem;
+    }
+    @include media-query(medium) {
+        margin: 0 2.75rem 0 2.75rem;
+    }
     @include media-query(small) {
         margin: 0 1.25rem 0 1.25rem;
     }
@@ -15,7 +21,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     font-weight: 500;
-    min-height: 95vh;
+    //min-height: 95vh;
 }
 
 /* #root {

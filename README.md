@@ -107,6 +107,56 @@ and scripts into the app directory. If you do this, you can’t go back!
 
 I also use Sass in this project .
 
+## Structure du projet 
+- `public/`, contient tous les fichiers qui n'ont pas besoin d'être compilés
+- `src/`, contient tous les fichier de développement de l'application qui seront compilés
+- `.gitignore`, fichier qui permet de définir les fichiers à ignorer dans la liste des fichiers modifiés à "push"
+- `.prettierrc`, fichier permettant la configuration de prettier (code formatter)
+- `package.json` & `package-lock.json`, fichiers utilisés par npm pour gérer les dépendances
+- `README.md`, fichier de présentation et d'explication du projet que vous lisez actuellement
+
+//a enlever
+`assets/`, contient toutes les images utilisées
+- `default/`, contient une image défaut de profil utilisateur
+- `icons/`, contient les icônes svg utilisées
+- `images/`, contient les images utilisées dans l'application
+    - `avatar/`, contients les avatars des photographes
+    - `gallery/`, contient les images des photographes à des formats différents
+        - `medium/`, medias (images et vidéos) des photographes pour un affichage dans la lightbox
+        - `small/`, medias (images et vidéos) des photographes à un petit format pour affichage en gallery
+    - `logo.png`, logo de FishEye (nom)
+- `favicon`, icon du logo de FishEye
+
+`css/`, contient les fichiers css où sont définit les styles de l'application
+- `photographer.css`, style de la page des photographe
+- `style.css`, style de la page index
+
+`data/`, contient les données en JSON pour l'application
+
+`sass/`, contient les fichiers sass sous le modèle 7-1, ensuite compilé en css
+- `Base/`, contients les fondations du site.
+- `Componants/`, contient blocs BEM indépendant réutilisable
+- `Layout/`, contient les blocs BEM réutilisable
+- `Pages/`, contient les blocs de code qui ne s’appliquent qu’à une seule page
+- `utils/`, contient les animations et mixins créées
+
+`scripts/`, contient les fichiers JavaScript 
+- `factories/`, contient les fichiers JS nécessaire à l'usinage de création des données JSON 
+- `pages/`, contient les fichiers JS `index.js` et `photographer.js` nécessaire à la création des pages de l'application
+- `utils/`, contient les différents composants JS utilisés dans les pages de l'applications 
+
+`index.html`, page d'index du site contenant la liste des photographes
+
+`photographer.html`, page des photographes
+
+`package.json` & `package-lock.json`, fichiers utilisés par npm pour gérer les dépendances
+
+`.gitignore`, fichier qui permet de définir les fichiers à ignorer dans la liste des fichiers modifiés à "push"
+
+`.eslintrc.js`, fichier de ESLint (outil d'analyse de code statique) permettant de le configurer
+
+`README.md`, fichier de présentation et d'explication du projet que vous lisez actuellement
+
 ## Lien de  la démo du site
 
 [Démo site Kasa](https://www.figma.com/file/bAnXDNqRKCRRP8mY2gcb5p/UI-Design?node-id=4%3A1)

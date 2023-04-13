@@ -4,6 +4,12 @@
 
     &__text {
         margin-top: 0.6rem;
+        @include media-query(large) {
+            margin-top: 0.45rem;
+        }
+        @include media-query(medium) {
+            margin-top: 0.35rem;
+        }
         @include media-query(small) {
             margin-top: 0.2rem;
         }
@@ -13,6 +19,12 @@
             font-size: 1.125rem; //18px
             margin-right: 10px;
             text-align: end;
+            @include media-query(medium) {
+                font-size: 1rem;
+            }
+            @include media-query(medium) {
+                font-size: 0.875rem;
+            }
             @include media-query(small) {
                 font-size: 0.75rem;
             }
@@ -21,11 +33,19 @@
 
     &__picture {
         border-radius: 50%;
-        height: 64px;
-        width: 64px;
+        height: 4rem;
+        width: 4rem;
+        @include media-query(large) {
+            height: 3.25rem;
+            width: 3.25rem;
+        }
+        @include media-query(medium) {
+            height: 2.5rem;
+            width: 2.5rem;
+        }
         @include media-query(small) {
-            height: 32px;
-            width: 32px;
+            height: 2rem;
+            width: 2rem;
         }
     }
 }

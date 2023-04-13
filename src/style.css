@@ -24,12 +24,18 @@ h1 {
   margin: 0;
 }
 
-html {
-  min-height: 100vh;
-}
-
 .content-wrap {
   margin: 0 6.25rem 0 6.25rem;
+}
+@media screen and (max-width: 1200px) {
+  .content-wrap {
+    margin: 0 4.5rem 0 4.5rem;
+  }
+}
+@media screen and (max-width: 992px) {
+  .content-wrap {
+    margin: 0 2.75rem 0 2.75rem;
+  }
 }
 @media screen and (max-width: 768px) {
   .content-wrap {
@@ -42,7 +48,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-weight: 500;
-  min-height: 95vh;
 }
 
 /* #root {
@@ -75,6 +80,16 @@ button p {
   display: flex;
   justify-content: space-between;
 }
+@media screen and (max-width: 1200px) {
+  .header__logo {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .header__logo {
+    width: 75%;
+  }
+}
 @media screen and (max-width: 768px) {
   .header__logo {
     width: 145px;
@@ -96,6 +111,16 @@ button p {
   color: #ff6060;
   font-size: 1.5rem;
 }
+@media screen and (max-width: 1200px) {
+  .header__menu a {
+    font-size: 1.25rem;
+  }
+}
+@media screen and (max-width: 992px) {
+  .header__menu a {
+    font-size: 1rem;
+  }
+}
 @media screen and (max-width: 768px) {
   .header__menu a {
     font-size: 0.75rem;
@@ -115,9 +140,6 @@ button p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /*     &--bottom {
-      bottom: 0;
-  } */
 }
 @media screen and (max-width: 768px) {
   .footer {
@@ -136,6 +158,16 @@ button p {
 .footer__copyright {
   color: white;
   font-size: 1.5rem;
+}
+@media screen and (max-width: 1200px) {
+  .footer__copyright {
+    font-size: 1.25rem;
+  }
+}
+@media screen and (max-width: 992px) {
+  .footer__copyright {
+    font-size: 1rem;
+  }
 }
 @media screen and (max-width: 768px) {
   .footer__copyright {
@@ -162,6 +194,16 @@ button p {
   font-weight: 700;
   margin: 0;
 }
+@media screen and (max-width: 1200px) {
+  .error__content__number {
+    font-size: 14rem;
+  }
+}
+@media screen and (max-width: 992px) {
+  .error__content__number {
+    font-size: 10rem;
+  }
+}
 @media screen and (max-width: 768px) {
   .error__content__number {
     font-size: 6rem;
@@ -171,6 +213,16 @@ button p {
   font-size: 2.25rem;
   margin: 0;
   margin-top: 4rem;
+}
+@media screen and (max-width: 1200px) {
+  .error__content__text {
+    font-size: 1.875rem;
+  }
+}
+@media screen and (max-width: 992px) {
+  .error__content__text {
+    font-size: 1.525rem;
+  }
 }
 @media screen and (max-width: 768px) {
   .error__content__text {
@@ -182,6 +234,11 @@ button p {
   text-decoration: underline;
   font-size: 1.125rem;
   margin-top: 10rem;
+}
+@media screen and (max-width: 1200px) {
+  .error__link {
+    font-size: 1rem;
+  }
 }
 @media screen and (max-width: 768px) {
   .error__link {
@@ -290,9 +347,24 @@ button p {
   align-items: center;
   justify-content: center;
 }
+@media screen and (max-width: 1200px) {
+  .banner {
+    height: 11.25rem;
+  }
+}
+@media screen and (max-width: 992px) {
+  .banner {
+    height: 8.75rem;
+  }
+}
 @media screen and (max-width: 768px) {
   .banner {
     height: 6.875rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .banner {
+    justify-content: start;
   }
 }
 .banner__img {
@@ -307,10 +379,28 @@ button p {
   font-weight: 500;
   color: white;
   box-sizing: inherit;
+  padding: 0;
+}
+@media screen and (max-width: 1200px) {
+  .banner__title {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 992px) {
+  .banner__title {
+    font-size: 2rem;
+  }
 }
 @media screen and (max-width: 768px) {
   .banner__title {
     font-size: 1.5rem;
+    padding: 0 1.5rem 0 1.5rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .banner__title {
+    width: 270px;
+    line-height: 100%;
   }
 }
 .banner__filter {
@@ -418,16 +508,31 @@ button p {
   justify-content: space-between;
   align-items: center;
   color: #fff;
-  font-size: 24px;
+  font-size: 1.5rem;
   cursor: pointer;
+}
+@media screen and (max-width: 1200px) {
+  .collapse__button p {
+    font-size: 1.25rem;
+  }
+}
+@media screen and (max-width: 992px) {
+  .collapse__button p {
+    font-size: 1rem;
+  }
 }
 @media screen and (max-width: 768px) {
   .collapse__button p {
-    font-size: 13px;
+    font-size: 0.813rem;
   }
 }
 .collapse__button__arrow {
   transition: transform 300ms ease-in-out;
+}
+@media screen and (max-width: 1200px) {
+  .collapse__button__arrow {
+    width: 1.25rem;
+  }
 }
 @media screen and (max-width: 768px) {
   .collapse__button__arrow {
@@ -450,6 +555,18 @@ button p {
 .collapse__content p {
   margin: 2rem 1.2rem 1.2rem 1.2rem;
 }
+@media screen and (max-width: 1200px) {
+  .collapse__content p {
+    font-size: 1rem;
+    margin-top: 1.7rem;
+  }
+}
+@media screen and (max-width: 992px) {
+  .collapse__content p {
+    font-size: 0.875rem;
+    margin-top: 1.4rem;
+  }
+}
 @media screen and (max-width: 768px) {
   .collapse__content p {
     font-size: 0.75rem;
@@ -461,6 +578,18 @@ button p {
   width: inherit;
   margin: 2rem 1.2rem 1.2rem 1.2rem;
   padding: 0;
+}
+@media screen and (max-width: 1200px) {
+  .collapse__content__list {
+    font-size: 1rem;
+    margin-top: 1.7rem;
+  }
+}
+@media screen and (max-width: 992px) {
+  .collapse__content__list {
+    font-size: 0.875rem;
+    margin-top: 1.4rem;
+  }
 }
 @media screen and (max-width: 768px) {
   .collapse__content__list {
@@ -481,6 +610,16 @@ button p {
   height: 26rem;
   width: 100%;
   display: flex;
+}
+@media screen and (max-width: 1200px) {
+  .slider__content {
+    height: 365px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .slider__content {
+    height: 305px;
+  }
 }
 @media screen and (max-width: 768px) {
   .slider__content {
@@ -515,17 +654,71 @@ button p {
   height: 5rem;
   width: 3rem;
 }
+@media screen and (max-width: 1200px) {
+  .slider__control__previous img {
+    height: 3.75rem;
+    width: 2.25rem;
+  }
+}
+@media screen and (max-width: 992px) {
+  .slider__control__previous img {
+    height: 2.5rem;
+    width: 1.5rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .slider__control__previous img {
+    height: 1.25rem;
+    width: 0.75rem;
+  }
+}
 .slider__control__next img {
   transform: rotate(270deg);
   height: 5rem;
   width: 3rem;
 }
+@media screen and (max-width: 1200px) {
+  .slider__control__next img {
+    height: 3.75rem;
+    width: 2.25rem;
+  }
+}
+@media screen and (max-width: 992px) {
+  .slider__control__next img {
+    height: 2.5rem;
+    width: 1.5rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .slider__control__next img {
+    height: 1.25rem;
+    width: 0.75rem;
+  }
+}
 .slider__control__preview {
   color: #fff;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-style: normal;
   display: flex;
   align-self: flex-end;
+}
+@media screen and (max-width: 1200px) {
+  .slider__control__preview {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 992px) {
+  .slider__control__preview {
+    font-size: 0.875rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .slider__control__preview {
+    display: none;
+  }
+}
+.slider__control__preview p {
+  margin-bottom: 0;
 }
 
 @keyframes fadein {
@@ -551,6 +744,16 @@ button p {
 .host__text {
   margin-top: 0.6rem;
 }
+@media screen and (max-width: 1200px) {
+  .host__text {
+    margin-top: 0.45rem;
+  }
+}
+@media screen and (max-width: 992px) {
+  .host__text {
+    margin-top: 0.35rem;
+  }
+}
 @media screen and (max-width: 768px) {
   .host__text {
     margin-top: 0.2rem;
@@ -562,6 +765,16 @@ button p {
   margin-right: 10px;
   text-align: end;
 }
+@media screen and (max-width: 992px) {
+  .host__text p {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 992px) {
+  .host__text p {
+    font-size: 0.875rem;
+  }
+}
 @media screen and (max-width: 768px) {
   .host__text p {
     font-size: 0.75rem;
@@ -569,19 +782,41 @@ button p {
 }
 .host__picture {
   border-radius: 50%;
-  height: 64px;
-  width: 64px;
+  height: 4rem;
+  width: 4rem;
+}
+@media screen and (max-width: 1200px) {
+  .host__picture {
+    height: 3.25rem;
+    width: 3.25rem;
+  }
+}
+@media screen and (max-width: 992px) {
+  .host__picture {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
 }
 @media screen and (max-width: 768px) {
   .host__picture {
-    height: 32px;
-    width: 32px;
+    height: 2rem;
+    width: 2rem;
   }
 }
 
 .rating {
   display: flex;
   align-items: center;
+}
+@media screen and (max-width: 1200px) {
+  .rating img {
+    height: 21px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .rating img {
+    height: 17px;
+  }
 }
 @media screen and (max-width: 768px) {
   .rating img {
@@ -604,6 +839,11 @@ button p {
 .tag__text {
   font-size: 0.875rem;
   font-weight: 500;
+}
+@media screen and (max-width: 992px) {
+  .tag__text {
+    font-size: 0.75rem;
+  }
 }
 @media screen and (max-width: 768px) {
   .tag__text {

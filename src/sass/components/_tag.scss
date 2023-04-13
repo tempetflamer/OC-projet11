@@ -13,6 +13,9 @@
     &__text {
         font-size: 0.875rem; //14px
         font-weight: 500;
+        @include media-query(medium) {
+            font-size: 0.75rem;
+        }
         @include media-query(small) {
             font-size: 0.625rem;
         }

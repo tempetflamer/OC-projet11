@@ -5,6 +5,12 @@
     justify-content: space-between;
 
     &__logo {
+        @include media-query(large) {
+            width: 85%;
+        }
+        @include media-query(medium) {
+            width: 75%;
+        }
         @include media-query(small) {
             width: 145px;
             height: 47px;
@@ -23,6 +29,12 @@
         a {
             color: $primary-color;
             font-size: 1.5rem; //24px = 1.5rem
+            @include media-query(large) {
+                font-size: 1.25rem;
+            }
+            @include media-query(medium) {
+                font-size: 1rem;
+            }
             @include media-query(small) {
                 font-size: 0.75rem;
             }

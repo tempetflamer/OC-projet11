@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import arrow from '../assets/img/chevron.svg'
 
-function Slider({ slides }) {
+function Gallery({ slides }) {
   const [currentSlide, setCurrentSlide] = useState(0)
   const length = slides.length
 
@@ -50,4 +50,4 @@ function Slider({ slides }) {
   )
 }
 
-export default Slider
+export default Gallery

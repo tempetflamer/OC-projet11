@@ -5,7 +5,6 @@ import greyStar from '../assets/img/grey-star.svg'
 
 function Rating({ rating }) {
   const stars = [1, 2, 3, 4, 5]
-  const maxStar = 5
 
   return (
     <div className="rating">

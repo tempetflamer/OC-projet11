@@ -3,6 +3,12 @@
     align-items: center;
 
     img {
+        @include media-query(large) {
+            height: 21px;
+        }
+        @include media-query(medium) {
+            height: 17px;
+        }
         @include media-query(small) {
             height: 13px;
         }
