@@ -108,65 +108,29 @@ and scripts into the app directory. If you do this, you can’t go back!
 I also use Sass in this project .
 
 ## Structure du projet 
+
 - `build/`, Il contient l'application compilé prêt à être mis en "production"
 - `public/`, contient tous les fichiers qui n'ont pas besoin d'être compilés
 - `src/`, contient tous les fichier de développement de l'application qui seront compilés
     - `assets/`, contient toutes les images et le fichier Json utilisé par l'application (passant par la compilation)
+    - `components/`, contient tous les composants de l'applications
+    - `pages/`, contient toutes les pages de l'application
+    - `sass/`, contient tous les fichiers sass partiels et le fichier main, structurer sous le modèle 7-1
+    - `utils/`, contient des fonctions utilitaires (seulement scrollToTop)
+    - `App.jsx`, contient les routes de l'application react
+    - `index.jsx`, fichier d'index de l'application retournant comme rendu app.jsx
+    - `style.css`, contient le style de l'application (compilé par sass)
 - `.gitignore`, fichier qui permet de définir les fichiers à ignorer dans la liste des fichiers modifiés à "push"
-- `.prettierrc`, fichier permettant la configuration de prettier (code formatter)
+- `.prettierrc`, fichier permettant la configuration de prettier (formateur de code)
 - `package.json` & `package-lock.json`, fichiers utilisés par npm pour gérer les dépendances
 - `README.md`, fichier de présentation et d'explication du projet que vous lisez actuellement
-
-//a enlever
-`assets/`, contient toutes les images utilisées
-- `default/`, contient une image défaut de profil utilisateur
-- `icons/`, contient les icônes svg utilisées
-- `images/`, contient les images utilisées dans l'application
-    - `avatar/`, contients les avatars des photographes
-    - `gallery/`, contient les images des photographes à des formats différents
-        - `medium/`, medias (images et vidéos) des photographes pour un affichage dans la lightbox
-        - `small/`, medias (images et vidéos) des photographes à un petit format pour affichage en gallery
-    - `logo.png`, logo de FishEye (nom)
-- `favicon`, icon du logo de FishEye
-
-`css/`, contient les fichiers css où sont définit les styles de l'application
-- `photographer.css`, style de la page des photographe
-- `style.css`, style de la page index
-
-`data/`, contient les données en JSON pour l'application
-
-`sass/`, contient les fichiers sass sous le modèle 7-1, ensuite compilé en css
-- `Base/`, contients les fondations du site.
-- `Componants/`, contient blocs BEM indépendant réutilisable
-- `Layout/`, contient les blocs BEM réutilisable
-- `Pages/`, contient les blocs de code qui ne s’appliquent qu’à une seule page
-- `utils/`, contient les animations et mixins créées
-
-`scripts/`, contient les fichiers JavaScript 
-- `factories/`, contient les fichiers JS nécessaire à l'usinage de création des données JSON 
-- `pages/`, contient les fichiers JS `index.js` et `photographer.js` nécessaire à la création des pages de l'application
-- `utils/`, contient les différents composants JS utilisés dans les pages de l'applications 
-
-`index.html`, page d'index du site contenant la liste des photographes
-
-`photographer.html`, page des photographes
-
-`package.json` & `package-lock.json`, fichiers utilisés par npm pour gérer les dépendances
-
-`.gitignore`, fichier qui permet de définir les fichiers à ignorer dans la liste des fichiers modifiés à "push"
-
-`.eslintrc.js`, fichier de ESLint (outil d'analyse de code statique) permettant de le configurer
-
-`README.md`, fichier de présentation et d'explication du projet que vous lisez actuellement
 
 ## Lien de  la démo du site
 
 [Démo site Kasa](https://tempetflamer.github.io/OC-projet11/)
 
-Par défaut le site renverra sur la page erreur 404, c'est normal le site n'est pas prévu pour être mis sur github (dossier d'un sous-domaine) et cherchera OC-projet11 comme un dossier ou page du site.
-
-Il est possible de corriger cette erreur en ajoutant OC-projet11 comme page de redirection vers le menu (le site étant sur la branch gh-pages), mais cela n'a pas d'intéret sur un site de démo et ne ferait que modifier (détourner de) son fonctionnement initial.
-
+Cette démo a été publiée avec gh-pages et n'est pas adaptée pour notre site, si le site charge correctement à l'adresse `https://tempetflamer.github.io/OC-projet11/`;
+La navigation sur celui-ci marchera, mais il sera impossible de se rendre sur les pages avec la barre d'adresse, rendant les tests de la page 404 impossible à vérifier.
 
 ## Compétences évaluées
 
