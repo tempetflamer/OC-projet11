@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+import Layout from '../components/Layout'
 import Banner from '../components/Banner'
 import CardAcc from '../components/CardAcc'
 import DataAccs from '../assets/data/logements.json'
@@ -8,7 +9,7 @@ import imgBanner from '../assets/img/banner_home.jpg'
 
 const Home = () => {
   return (
-    <div className="home">
+    <Layout className="home">
       <div className="home__banner">
         <Banner image={imgBanner} title="Chez vous, partout et ailleurs" />
       </div>{' '}
@@ -25,7 +26,7 @@ const Home = () => {
           })}
         </div>
       </section>
-    </div>
+    </Layout>
   )
 }
 

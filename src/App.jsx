@@ -9,12 +9,10 @@ import Accomodation from './pages/Accomodation'
 import Error from './pages/Error404'
 import './style.css'
 import image from './assets/img/name.svg'
-import ScrollToTop from './utils/ScrollToTop'
 
 function App() {
   return (
     <Router>
-      <ScrollToTop />
       <Header image={image} alt="logo de Kasa" />
       <Routes>
         <Route exact path="/" element={<Home />}></Route>

@@ -6,6 +6,7 @@ import Gallery from '../components/Gallery'
 import Tag from '../components/Tag'
 import Host from '../components/Host'
 import Rating from '../components/Rating'
+import Layout from '../components/Layout'
 
 function Accomodation() {
   const { dataID } = useParams()
@@ -16,7 +17,7 @@ function Accomodation() {
       {house === undefined ? (
         <Navigate to="not-found" replace={true} />
       ) : (
-        <div className="accommodation">
+        <Layout className="accommodation">
           <Gallery slides={house.pictures} />
           <div className="accommodation__content">
             <div className="accommodation__content__informations">
@@ -37,7 +38,7 @@ function Accomodation() {
             <Collapse title="Description" content={house.description} />
             <Collapse title="Équipement" content={house.equipments} />
           </div>
-        </div>
+        </Layout>
       )}
     </>
   )

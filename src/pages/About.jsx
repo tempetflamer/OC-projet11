@@ -1,5 +1,6 @@
 import React from 'react'
 
+import Layout from '../components/Layout'
 import Collapse from '../components/Collapse'
 import Banner from '../components/Banner'
 import imgBanner from '../assets/img/Background_about.jpg'
@@ -29,7 +30,7 @@ function About() {
   ]
 
   return (
-    <div className="about">
+    <Layout className="about">
       <div className="about__banner">
         <Banner image={imgBanner} title="" />
       </div>{' '}
@@ -38,7 +39,7 @@ function About() {
           <Collapse key={i} title={col.title} content={col.content} />
         ))}
       </section>
-    </div>
+    </Layout>
   )
 }
 
